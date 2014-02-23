@@ -1,0 +1,11 @@
+body {
+    padding: 10px !important;
+}
+.ng-table {
+    border: 3px solid #002;
+    text-align: left; right;
+/*position:absolute;
+right:0px;
+width:300px;
+background-color:#b0e0e6;*/
+}

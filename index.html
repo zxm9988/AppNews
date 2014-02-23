@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="bower_components/angular/angular.js"></script>
+    <script data-require="ng-table@*" data-semver="0.3.0" src="bower_components/ng-table/ng-table.js"></script>
+
+    <link data-require="ng-table@*" data-semver="0.3.0" rel="stylesheet" href="bower_components/ng-table/ng-table.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="appNews.js"></script>
+  </head>
+<body ng-app="main" ng-controller="DemoCtrl">
+    <table ng-table class="table">
+    <tr ng-repeat="user in users">
+        <td data-title="'标题'">
+           <a href={{user.link}}>{{user.name}}</a></td>
+        <td data-title="'发表时间'">{{user.age}}</td>
+    </tr>
+    </table>
+</body>
+</html>
